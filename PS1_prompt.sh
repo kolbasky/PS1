@@ -45,7 +45,6 @@ promptCommand () {
   fi;
   export PS1="\n${COLOR}${TC}[\u@\h]-[\t]${VENV}${GIT}\n${COLOR}${BC}[\w]${SCR}\\$ ${DISCARD}"; 
 };
+PROMPT_DIRTRIM=4;
 PROMPT_COMMAND=promptCommand;
-history -d $(history 1)
-
-
+history -d $(history 1);
